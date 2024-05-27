@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Assistência Técnica</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Solicitar Assistência Técnica</h2>
+        <form id="techForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="setor">Setor:</label>
+            <input type="text" id="setor" name="setor" required><br>
+
+            <label for="problem">Descrição do Problema:</label><br>
+            <textarea id="problem" name="problem" rows="4" required></textarea><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

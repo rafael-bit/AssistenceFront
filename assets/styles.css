@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    top: 7rem;
+}
+
+.container-admin {
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 460px;
+}
+
+.card {
+    flex: 1;
+    margin: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.open {
+    background-color: #fff;
+}
+
+.completed {
+    background-color: #e6e6e6;
+}
+
+.completed p {
+    font-style: italic;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.edit {
+    background-color: #4c66af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit:hover{
+    background-color: #546db3;
+}
+
+.delete {
+    background-color: #b12c2c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete{
+    background-color: #b33535;
+}
