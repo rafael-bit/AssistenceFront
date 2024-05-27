@@ -5,7 +5,7 @@ document.getElementById('techForm').addEventListener('submit', function(event) {
     let setor = document.getElementById('setor').value.trim();
     let problem = document.getElementById('problem').value.trim();
 
-    fetch('http://127.0.0.1:3000/submit-request', {
+    fetch('https://assistence-24c69f8f3217.herokuapp.com/submit-request', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
