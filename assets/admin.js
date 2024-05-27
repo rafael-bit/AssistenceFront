@@ -1,5 +1,5 @@
 function loadRequests() {
-    fetch('http://127.0.0.1:3000/requests')
+    fetch('https://assistence-24c69f8f3217.herokuapp.com/requests')
         .then(response => response.json())
         .then(data => {
             const openRequestsContainer = document.getElementById('requests-container');
@@ -75,7 +75,7 @@ function createCard(request) {
 function markAsComplete(requestId) {
     const completedTime = new Date().toISOString();
 
-    fetch(`http://127.0.0.1:3000/requests/${requestId}`, {
+    fetch(`https://assistence-24c69f8f3217.herokuapp.com/requests/${requestId}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ function editRequest(requestId, name, setor, problem) {
     const newProblem = prompt("Editar Problema:", problem);
 
     if (newName && newSetor && newProblem) {
-        fetch(`http://127.0.0.1:3000/requests/${requestId}`, {
+        fetch(`https://assistence-24c69f8f3217.herokuapp.com/requests/${requestId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -129,7 +129,7 @@ function editRequest(requestId, name, setor, problem) {
 }
 
 function deleteRequest(requestId) {
-    fetch(`http://127.0.0.1:3000/requests/${requestId}`, {
+    fetch(`https://assistence-24c69f8f3217.herokuapp.com/requests/${requestId}`, {
         method: 'DELETE',
     })
     .then(response => {
